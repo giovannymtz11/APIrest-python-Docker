@@ -1,0 +1,18 @@
+version: "3.9"
+services:
+  flask_compose:
+    build:
+      dockerfile: giovannymtz11/flaskapp:latest
+    ports:
+      - "5000:5000"
+    links:
+      - databaseserver
+  databaseserver:
+    build:
+      dockerfile: giovannymtz11/dbapp:latest
+    ports:
+      - "3303:3303"
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=itl
+
