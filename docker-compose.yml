@@ -4,7 +4,7 @@ services:
     build:
       dockerfile: giovannymtz11/flaskapp:latest
     ports:
-      - "5000:5000"
+      - "5050:5050"
     links:
       - databaseserver
   databaseserver:
