@@ -35,7 +35,11 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
+<<<<<<< HEAD
 VIRTUAL_ENV="C:\Users\yOvas\OneDrive\Documentos\Decimo semestre\api_flask_mysql\env"
+=======
+VIRTUAL_ENV="C:\Users\yOvas\OneDrive\Escritorio\APIREST_python\env"
+>>>>>>> bba1099 (Dockerizacion exitosa)
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

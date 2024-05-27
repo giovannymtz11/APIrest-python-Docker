@@ -7,10 +7,17 @@
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
+<<<<<<< HEAD
+=======
+CREATE DATABASE IF NOT EXISTS itl;
+USE itl;
+
+>>>>>>> bba1099 (Dockerizacion exitosa)
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
+<<<<<<< HEAD
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -27,6 +34,14 @@ SET time_zone = "+00:00";
 -- Table structure for table `carrera`
 --
 
+=======
+-- Drop existing tables
+DROP TABLE IF EXISTS `carrera`;
+DROP TABLE IF EXISTS `especialidad`;
+DROP TABLE IF EXISTS `materia`;
+
+-- Table structure for table `carrera`
+>>>>>>> bba1099 (Dockerizacion exitosa)
 CREATE TABLE `carrera` (
   `CarreraID` varchar(10) NOT NULL,
   `NombreCarrera` varchar(100) NOT NULL,
@@ -34,24 +49,32 @@ CREATE TABLE `carrera` (
   `EspecialidadID` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+<<<<<<< HEAD
 -- --------------------------------------------------------
 
 --
 -- Table structure for table `especialidad`
 --
 
+=======
+-- Table structure for table `especialidad`
+>>>>>>> bba1099 (Dockerizacion exitosa)
 CREATE TABLE `especialidad` (
   `EspecialidadID` varchar(10) NOT NULL,
   `NombreEspecialidad` varchar(100) NOT NULL,
   `CarreraID` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+<<<<<<< HEAD
 -- --------------------------------------------------------
 
 --
 -- Table structure for table `materia`
 --
 
+=======
+-- Table structure for table `materia`
+>>>>>>> bba1099 (Dockerizacion exitosa)
 CREATE TABLE `materia` (
   `MateriaID` varchar(10) NOT NULL,
   `NombreMateria` varchar(100) NOT NULL,
@@ -62,7 +85,10 @@ CREATE TABLE `materia` (
   `EspecialidadID` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 COMMIT;
+<<<<<<< HEAD
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+=======
+>>>>>>> bba1099 (Dockerizacion exitosa)
