@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-class DevelopmentConfig():
-    DEBUG = True
-    MYSQL_HOST = 'databaseserver' 
-    MYSQL_USER = 'root'
-    MYSQL_PASSWORD = 'password' 
-    MYSQL_DB = 'itl'
-
-config = {
-    'development': DevelopmentConfig
-=======
 import os
 
 class Config:
@@ -21,5 +10,4 @@ class Config:
 config = {
     'default': Config,
     'development': Config
->>>>>>> bba1099 (Dockerizacion exitosa)
 }
